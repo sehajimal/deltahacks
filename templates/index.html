@@ -1,4 +1,3 @@
-<!-- filepath: /C:/Users/saqib/OneDrive - McMaster University/Term_2_Soft-eng/saqib_delta/deltahacks/templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +7,62 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Workout Tracker</h1>
-        <ul class="workout-links">
-            <li><a class="workout-link" href="{{ url_for('bicep_curl') }}">Bicep Curl</a></li>
-            <li><a class="workout-link" href="{{ url_for('shoulder_press') }}">Shoulder Press</a></li>
-            <li><a class="workout-link" href="{{ url_for('lateral_raise') }}">Lateral Raise</a></li>
-        </ul>
-    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">WorkoutTracker</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Workouts</a>
+                    <div class="dropdown-content">
+                        <div class="submenu">
+                            <h3>Push</h3>
+                            <a href="{{ url_for('shoulder_press') }}">Shoulder Press</a>
+                            <a href="#">Bench Press</a>
+                        </div>
+                        <div class="submenu">
+                            <h3>Pull</h3>
+                            <a href="{{ url_for('bicep_curl') }}">Bicep Curls</a>
+                            <a href="#">Pull-ups</a>
+                        </div>
+                        <div class="submenu">
+                            <h3>Legs</h3>
+                            <a href="#">Squats</a>
+                            <a href="#">Deadlifts</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#workout-info">Workout Info</a></li>
+                <li><a href="#tracker">Daily Tracker</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Transform Your Fitness Journey</h1>
+            <p>Track, analyze, and improve your workouts with AI-powered form detection</p>
+            <a href="#workouts" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We help you achieve perfect form and track your progress with advanced AI technology.</p>
+                    <p>Our platform provides real-time feedback and detailed analytics to optimize your workout routine.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 WorkoutTracker. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
