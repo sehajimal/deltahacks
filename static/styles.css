@@ -1,0 +1,43 @@
+/* filepath: /C:/Users/saqib/OneDrive - McMaster University/Term_2_Soft-eng/saqib_delta/deltahacks/static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.workout-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workout-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 10px 0;
+}
+
+.workout-link:hover {
+    background-color: #0056b3;
+}

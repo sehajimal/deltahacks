@@ -1,0 +1,20 @@
+<!-- filepath: /C:/Users/saqib/OneDrive - McMaster University/Term_2_Soft-eng/saqib_delta/deltahacks/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Tracker</h1>
+        <ul class="workout-links">
+            <li><a class="workout-link" href="{{ url_for('bicep_curl') }}">Bicep Curl</a></li>
+            <li><a class="workout-link" href="{{ url_for('shoulder_press') }}">Shoulder Press</a></li>
+            <li><a class="workout-link" href="{{ url_for('lateral_raise') }}">Lateral Raise</a></li>
+        </ul>
+    </div>
+</body>
+</html>
